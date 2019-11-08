@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Slider With JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="slider-container">
+            <div class="image-carousel" id="image-carousel">
+                <img src="assets/images/bg1.jpg">
+                <img src="assets/images/bg2.jpg">
+                <img src="assets/images/bg3.jpg">
+                <img src="assets/images/bg4.jpg">
+            </div>
+            <div class="ctrl-arrows" id="left-arrow">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <div class="ctrl-arrows" id="right-arrow">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <p class="disclaimer">Images were sourced from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+        (function() {
+            carouselSlider("image-carousel");
+        })();
+    </script>
+</body>
+</html>
